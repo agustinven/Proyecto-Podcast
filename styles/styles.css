@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*Navbar Styles*/
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    height: 50px;
+    color: black;
+    z-index: 1;
+}
+
+.navbar--btn-show {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.navbar--btn-hide {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+
+
+.navbar--menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: flex-start;
+    list-style: none;
+    background-color: #0000EC;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 3rem;
+    right: -100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.navbar--menu-item {
+    margin: 15px 0;
+}
+
+.navbar--menu-item a {
+    text-decoration: none;
+    color: white;
+    font-family: ibm plex mono;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.navbar--menu-item a:active~.navbar--menu {
+    right: -100%;
+}
+
+
+.navbar--brand {
+    width: auto;
+    height: auto;
+}
+
+#checkMenu {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+
+#checkMenu:checked~.navbar--btn-show {
+    display: none;
+}
+
+#checkMenu:checked~.navbar--btn-hide {
+    display: block;
+}
+
+
+#checkMenu:checked~.navbar--menu {
+    right: 0;
+}
+
+
+/*Header styles*/
+.text-tittle {
+    width: 100%;
+    padding: 15px;
+}
+
+.text-tittle h1 {
+    margin-top: 80px;
+    font-family: ibm plex sans;
+    font-size: 2.5rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.text-tittle p {
+    font-family: ibm plex mono;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+
+.salto {
+    display: block;
+}
+
+
+/*Button styles(Conocé mas)*/
+
+.button {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    background-color: #00F3BB;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: ibm plex mono;
+    font-weight: 500;
+    text-decoration: none;
+    color: #060A24;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button:hover {
+    border-radius: 8px;
+    transition: 0.2s;
+    background-image: linear-gradient(to left, #0000FE, #00F0B8);
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+
+/*Section-1 styles*/
+
+.first-section {
+    position: relative;
+    background-image: linear-gradient(#0000FF, #0000A3);
+    clip-path: polygon(0 3%, 100% 0, 100% 96%, 0% 100%);
+    width: 100%;
+    height: 1250px;
+}
+
+
+
+.audio {
+    width: 94%;
+    margin-left: 10px;
+    border-width: 0px;
+    background-color: transparent;
+}
+
+.episodios {
+    position: absolute;
+    left: 5%;
+    top: 4%;
+    font-size: 36px;
+    font-family: ibm plex sans;
+    color: #fff;
+}
+
+.podcast1 {
+    position: absolute;
+    top: 9%;    
+}
+
+.podcast2 {
+    position: absolute;
+    top: 29%;
+}
+
+.podcast3 {
+    position: absolute;
+    top: 49%;
+}
+
+.podcast4 {
+    position: absolute;
+    top: 69%;
+}
+
+/*giant phone styles*/
+
+.first-phone {
+    width: 100%;
+    position: relative;
+    bottom: 115px;
+}
+
+/*Section-2 styles*/
+
+.second-section {
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+    padding: 15px;
+}
+
+.second-header {
+    font-family: ibm plex sans;
+    font-size: 2.25rem;
+
+}
+
+.second-section-paragraph {
+    font-family: ibm plex mono;
+    font-size: 1rem;
+    margin-top: 0.875rem;
+    line-height: 1.2rem;
+}
+
+/*styles for the third section*/
+
+
+.third-header-paragraph {
+    font-family: ibm plex sans;
+    font-size: 36px;
+    width: 100%;
+    padding: 15px;
+}
+
+.mad-scientists {
+    width: 100%;
+    display: flex;
+}
+
+
+
+/*fourth section styles*/
+
+.fourth-section {
+    position: relative;
+    top: 50px;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    text-align: center;
+}
+
+.fourth-header-paragraph {
+    font-family: ibm plex sans;
+    font-size: 2.25rem;
+    padding : 15px;
+}
+
+.container-img div {
+    padding: 20px;
+}
+
+.fourth-section-paragraph {
+    text-align: center;
+}
+
+.fourth-section-paragraph {
+    font-family: ibm plex sans;
+    font-size: 1.5rem;
+    
+}
+
+
+/*fifth section styles*/
+
+.fifth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#0000FF, #0000A3);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+}
+
+
+.fifth-section-paragraph {
+    font-family: ibm plex sans;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/*button 2 styles*/
+
+.button-2 {
+    width: 90%;
+    height: 15%;
+    margin-top: 20px;
+    background-color: #00F3BB;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: ibm plex mono;
+    font-weight: 500;
+    color: #060A24;
+}
+
+.button-2:hover {
+    border-radius: 8px;
+    transition: 0.2s;
+    background-image: linear-gradient(to left, #0000FE, #00F0B8);
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+
+
+/*Footer styles*/
+
+.footer {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.copyright {
+    font-family: ibm plex mono;
+    font-size: 0.875rem;
+    width: 80%;
+    position: relative;
+    left: 70px;
+    text-align: center;
+}
+
+.icons-social {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/media.css">
+    <script src="https://kit.fontawesome.com/1ba5e8b5e2.js"></script>
+    <title>Podcast Web</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/img/logo.svg" alt="podcast logo" class="navbar--brand">
+            <input type="checkbox" id="checkMenu">
+            <label for="checkMenu" class="navbar--btn-hide">
+                <i class="fas fa-times"></i>
+            </label>
+            <label for="checkMenu" class="navbar--btn-show">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul class="navbar--menu">
+                
+                <li class="navbar--menu-item"><a href="#Episodios">EPISODIOS</a></li>
+                <li class="navbar--menu-item"><a href="#Nosotros">NOSOTROS</a></li>
+                <li class="navbar--menu-item"><a href="#Entrevistas">ENTREVISTAS</a></li>
+                <li class="navbar--menu-item"><a href="#Topicos">TÓPICOS</a></li>
+            </ul>
+        </nav>
+        <div class="text-tittle">
+            <h1>Hello <del>world</del><span class="salto"> pale blue dot<span class="point">.</span></span></h1>
+            <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves
+                cada 15 días.</p>
+
+            <button class="button">CONOCÉ MAS</button>
+        </div>
+    </header>
+
+
+    <div id="Episodios" class="first-section">
+        <p class="episodios">Episodios</p>
+        <div class="podcasts">
+            <iframe class="podcast1 audio" src="https://open.spotify.com/embed-podcast/episode/3akhUoRHx7hqKUfQgiH9u3"
+                width="100" height="232"  allow="encrypted-media"></iframe>
+            <iframe class="podcast2 audio" src="https://open.spotify.com/embed-podcast/episode/0Wk6iiAULaW3f4N4k6oWx8"
+                width="100" height="232"  allow="encrypted-media"></iframe>
+            <iframe class="podcast3 audio" src="https://open.spotify.com/embed-podcast/episode/1fVyBCpbOMCyDhrojWahZh"
+                width="100" height="232"  allow="encrypted-media"></iframe>
+            <iframe class="podcast4 audio" src="https://open.spotify.com/embed-podcast/episode/1jcR2XuUJAZdux2Yz709bp"
+                width="100" height="232"  allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+
+    <img src="/img/phone.png" class="first-phone" alt="image showing a woman interacting with a computer">
+
+
+    <div id="Nosotros" class="second-section">
+        <p class="second-header">
+            De dónde <span class="salto">venimos</span>
+        </p>
+        <p class="second-section-paragraph">
+            Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+            Universe, are challenged by this point of pale light.
+            <br><br>
+            <span class="salto">
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                vastness,
+                there is no hint that help will come from elsewhere to save us from ourselves.
+            </span>
+        </p>
+    </div>
+
+
+
+    <div id="Entrevistas" class="third-section">
+        <p class="third-header-paragraph">
+            Invitadas/os <span class="salto">estelares</span>
+        </p>
+        <img class="mad-scientists mad-1" src="/img/grace-hopper.png"
+            alt="Grace Hopper, one of the first programmers of the Harvard Mark I computer">
+        <img class="mad-scientists mad-2" src="/img/Katie-Bouman.png"
+            alt="Katie Bouman, She led the development of an algorithm for imaging black holes">
+        <img class="mad-scientists mad-3" src="/img/Margaret_Hamilton.png"
+            alt="Margaret Hamilton, she developed on-board flight software for NASA's Apollo space program">
+        <img class="mad-scientists mad-4" src="/img/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
+            alt="UNIVAC 1101 was a computer system designed by Engineering Research Associates and built by the Remington Rand corporation in October 1953.">
+        <img class="mad-scientists mad-5"
+            src="/img/Computer-operators-with-an-Eniac-the-world’s-first-programmable-general-purpose-computer.png"
+            alt="Computer operators with an Eniac, the world’s first programmable general-purpose computer">
+        <img class="mad-scientists mad-6" src="/img/susan-kare.png"
+            alt="is an graphic designer who created many of the interface elements for the Apple Macintosh in the 1980s">
+    </div>
+
+
+    <div id="Topicos" class="fourth-section">
+        <p class="fourth-header-paragraph">
+            Algunos de <span class="salto">nuestros temas</span>
+        </p>
+        <div class="container-img">
+            <div>
+                <img src="/img/icon1.svg" alt="remote work image" class="first-image photos">
+                <p class="fourth-section-paragraph one">Trabajo remoto</p>
+
+            </div>
+            <div>
+                <img src="/img/icon2.svg" alt="image of repeating the programming" class="second-image photos">
+                <p class="fourth-section-paragraph two">Repasando la <span class="salto">programación</span></p>
+            </div>
+            <div>
+                <img src="/img/icon3.svg" alt="code base image" class="third-image photos">
+                <p class="fourth-section-paragraph three">Bases del código</p>
+            </div>
+            <div>
+                <img src="/img/icon4.svg" alt="computer security image" class="fourth-image photos">
+                <p class="fourth-section-paragraph fourth">Seguridad informática</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="fifth-section">
+        <p class="fifth-section-paragraph">
+            ¿Querés las <span class="salto">últimas</span> novedades?
+        </p>
+        <button class="button-2">ESCUCHÁ LOS EPISODIOS</button>
+    </div>
+
+
+
+    <footer class="footer">
+        <p class="copyright">© 2019— Hello blue pale dot</p>
+        <div class="icons-social">
+            <i class="fab fa-spotify fa-1"></i>
+            <i class="fab fa-instagram fa-2"></i>
+            <i class="fab fa-twitter fa-3"></i>
+            <i class="fab fa-facebook fa-4"></i>
+            <i class="fab fa-telegram fa-5"></i>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
