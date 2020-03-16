@@ -1,5 +1,0 @@
-Hola profe como esta? Le comento por medio de este archivo cuales fueron las correcciones que hice.
-Primero que todo elimine todos los errores que arrojaba el html validator, incluyendo los relacionados a iframe y sus atributos obsoletos, cabe aclarar que estos eran en su mayoria warnings y pocos errores, pero por las dudas me tome el tiempo de modificarlos, por otro lado me vi obligado a suplantar todos los <section's> por <div's> para que el validator no arrojara error y asi no tener que modificar muchas lineas de codigo, ocasionando asi que el codigo se rompa, aclaro que me queda claro el funcionamiento de las etiquetas semanticas pero me vi obligado a cambiarlas.
-Otro tema va relacionado a los <h1>...<h6>, solo utilize <h1> ya que no vi la necesidad de usar <h3>, <h4>, <h5>... etc.
-Aplique :hover y gradiente a cada uno de los botones.
-Espero que salga todo bien, saludos ;).
